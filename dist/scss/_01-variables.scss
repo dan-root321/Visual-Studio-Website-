@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;800&display=swap');
+
+$ff-primary: "Nunito", helvetica sans-serif;
+$ff-secondary: "Arial", helvetica sans-serif;
+
+$clr-primary:#F06236;
+$clr-dark:#2C2C32;
+$clr-darker:#25252B;
+$clr-light:#ffffff;
+$clr-blue:#0066B8;
+
+
+
+// For responsive design
+$mobile:48rem;
+$tablet: 72rem;
+$desktop: 90rem;
+
+$break-sm:500px;
+$break-md:768px;
+$break-lg:970px;
+
+$shadow: 5px 5px 15px 2px rgba(0,0,0,0.20);

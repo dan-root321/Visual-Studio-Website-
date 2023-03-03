@@ -1,0 +1,129 @@
+.banner__home{
+    
+    // padding: 0 5rem;
+    
+    background: $clr-darker;
+    .container{
+        padding-bottom: 1;
+    }
+    p{
+        text-align: center;
+        padding: 0 3rem;
+        color: $clr-light;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        span{
+            color: $clr-blue;
+        }
+    }
+    
+}
+
+.banner{
+    background: $clr-dark;
+
+    &__wrapper{
+        text-align: center;
+    }
+
+    &__content{
+        display: block;
+        
+        h1{
+            font-weight: 200;
+            font-size: 4rem;
+            line-height: 5rem;
+            span{
+                display: block;
+                font: bolder;
+            }
+        }
+        p{
+            opacity: .6;
+            padding: 1rem 0;
+            font-weight: 100;
+        }
+
+        .download__button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            
+            .windows{
+                align-items: center;
+                background-color: $clr-blue;
+                padding: 1rem 4.5rem;
+                small{
+                    
+                    display: block;
+                    font-size: 1.3rem;
+                }
+                
+            }   
+            .download__icon{
+                
+                margin-left: .5rem;
+                padding: 2.3rem 2rem;
+                background-color: $clr-blue;
+                a{
+                    align-items: center;
+                }
+            }
+        }
+
+        .description__text{
+            p{
+                display: inline;
+                border-radius: 1rem;
+                padding: .8rem 5.5rem;
+                margin-top: 5rem;
+                background-color: $clr-darker;
+                font-size: 1.2rem;
+                color: $clr-light;
+                opacity: 1;
+
+                span{
+                    color: $clr-blue;
+                }
+            }
+        }
+
+        .license__and__agreement{
+            margin-top: 1rem;
+            align-items: center;
+            small{
+                display: block;
+                font-size: 1.3rem;
+                opacity: .7;
+            }
+            small:last-child{
+                opacity: 1;
+                color: $clr-blue;
+            }
+        }
+
+
+    }
+
+    &__img{
+        
+        margin-top: 2rem;
+        
+    }
+
+    @include mediaQuery($break-lg){
+        &__wrapper{
+            @include grid(2, .5rem);
+            align-items: center;
+        }
+
+        &__wrapper:first-child{
+            justify-content:left;
+        }
+
+
+    }
+
+    
+}
