@@ -7,6 +7,7 @@
     <title>Visual Studio</title>
     <link rel="stylesheet" href="./scss/main.css">
     <script src="https://kit.fontawesome.com/7fb89ebb8e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 
 </head>
 <body>
@@ -32,6 +33,7 @@
 
                     </ul>
                 </div>
+                
 
                 
 
@@ -58,9 +60,6 @@
             
         </div>
     </header>
-    <div class="space">
-
-    </div>
 
     <section class="banner__home">
         <div class="container">
@@ -91,7 +90,7 @@
 
                     <div class="license__and__agreement">
                         <small>By using VS Code, you agree to its</small>
-                        <small>license and privacy statement</small>
+                        <a href="">license and privacy statement</a>
                     </div>
 
                 </div>
@@ -102,6 +101,121 @@
             </div>
         </div>
     </section>
+
+    <section class="prop__section">
+        <div class="container">
+            <div class="prop__section__wrapper">
+                <div class="prop__section__item1">
+                    <div class="Intellisense"></div>
+                    <a href="">IntelliSense</a>
+                </div>
+                <div class="prop__section__item2">
+                    <div class="debug"></div>
+                    <a href="">Run and Debug</a>
+                </div>
+                <div class="prop__section__item3">
+                    <div class="git"></div>
+                    <a href="">Built-in-Git</a>
+                </div>
+                <div class="prop__section__item4">
+                    <div class="extensions"></div>
+                    <a href="">Extensions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedback">
+        <div class="container"> 
+            <div class="feedback__wrapper">
+                <div class="feedback__item">
+                    <div class="feedback__img">
+                        <img src="./img/Una.jpg" alt="">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+
+                    <div class="feedback__text">
+                        <h2>Una Kraverts</h2>
+                        <small>@Una</small>
+                        <p>VS <span>@code </span>does so many things right. I’m constantly impressed by the UX, and customizing workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️</p>
+                    </div>
+                </div>
+                <div class="feedback__item">
+                    <div class="feedback__img">
+                        <img src="./img/jadbox.jpg" alt="">
+                        <div class="twitter"></div>
+                    </div>
+
+                    <div class="feedback__text">
+                        <h2>Jonathan Dunlaps</h2>
+                        <small>@jadbox</small>
+                        <p>VS Code will have deep remote development. You can connect to a container running a different OS and use any VS Code plugins, linting, debugging for that environment. 🔥🔥🔥</p>
+                    </div>
+                </div>
+                <div class="feedback__item">
+                    <div class="feedback__img">
+                        <img src="./img/PKodmad.jpg" alt="">
+                        <div class="twitter"></div>
+                    </div>
+
+                    <div class="feedback__text">
+                        <h2>Pavithra Kodmad</h2>
+                        <small>@PKodamad</small>
+                        <p>VS Code is my most used and favorite editor. I love being able to customize the editor - changing the layout, the icons, fonts and color scheme is so easy!</p>
+                    </div>
+                </div>
+                <div class="feedback__item">
+                    <div class="feedback__img">
+                        <img src="./img/Una.jpg" alt="">
+                        <div class="twitter"></div>
+                    </div>
+
+                    <div class="feedback__text">
+                        <h2>Una Kraverts</h2>
+                        <small>@Una</small>
+                        <p>VS <span>@code </span>does so many things right. I’m constantly impressed by the UX, and customizing workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️</p>
+                    </div>
+                </div>
+                <div class="feedback__item">
+                    <div class="feedback__img">
+                        <img src="./img/jadbox.jpg" alt="">
+                        <div class="twitter"></div>
+                    </div>
+
+                    <div class="feedback__text">
+                        <h2>Jonathan Dunlaps</h2>
+                        <small>@jadbox</small>
+                        <p>VS Code will have deep remote development. You can connect to a container running a different OS and use any VS Code plugins, linting, debugging for that environment. 🔥🔥🔥</p>
+                    </div>
+                </div>
+                <div class="feedback__item">
+                    <div class="feedback__img">
+                        <img src="./img/PKodmad.jpg" alt="">
+                        <div class="twitter"></div>
+                    </div>
+
+                    <div class="feedback__text">
+                        <h2>Pavithra Kodmad</h2>
+                        <small>@PKodamad</small>
+                        <p>VS Code is my most used and favorite editor. I love being able to customize the editor - changing the layout, the icons, fonts and color scheme is so easy!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script type="module">
+
+        var slider = tns({
+          container: '.feedback__wrapper',
+          items: 3,
+          slideBy: 'page',
+          center:true,
+          controlsText: ['<i class="fa-sharp fa-solid fa-chevron-left"></i>', '<i class="fa-sharp fa-solid fa-chevron-right"></i>'],
+          
+        });
+        </script>
     <script src="./script.js"></script>
 </body>
-</html>
+</html> 

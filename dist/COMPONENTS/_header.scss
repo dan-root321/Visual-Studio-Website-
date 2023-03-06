@@ -1,6 +1,5 @@
 .header{
     position: relative;
-    
     width: 100%;
     height: fit-content;
     background: $clr-dark;
@@ -65,9 +64,6 @@
 
         }
 
-        
-
-
     }
 
     .toggle__menu{
@@ -84,7 +80,7 @@
             transition: .5s ease;
         }
 
-        // &.open{
+        // &.open{  
 
         // }
     }
@@ -113,7 +109,7 @@
             display: flex;
 
         }
-
+        
         &__nav{
             overflow-y: unset;
             display: inline-block;
@@ -122,6 +118,11 @@
             height: unset;
             background: none;
             color: $clr-light;
+
+        &.open{  
+            top:unset;
+            height: unset;
+         }
 
             ul{
                 
@@ -164,6 +165,7 @@
             display: flex;
             align-items: center;
             .search{
+                opacity: .8;
                 i{
                     margin-left: 1rem;
                     color: $clr-light;
@@ -173,6 +175,9 @@
                 input{
                     color: $clr-light;
                 }
+                &:hover{
+                    opacity: 1;
+                }
             }
 
             i{
@@ -180,7 +185,7 @@
             }
             
             a{
-                opacity: .8;
+                opacity: 1;
                 display: block;
                 text-align: center;
                 padding: .7rem 1.5rem;
@@ -189,7 +194,7 @@
                 transition: .2 ease;
                 &:hover{
                     
-                    opacity: 1;
+                    opacity: .8;
                 }
             }
         
