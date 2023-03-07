@@ -1,9 +1,8 @@
 .btn{
     background-color: $clr-primary;
-    padding: .8rem 1.8rem;
-    border-radius: 3rem;
-    border: 1px solid;
+    padding: 15px 35px;
     display: inline-block;
+    border-radius: 3px;
     transition: .3s ease-in-out;
     &-primary{
         background-color: $clr-primary;
@@ -15,14 +14,21 @@
 
     }
 
+    &-blue{
+        background-color: $clr-blue;
+        color: $clr-light;
+        border-color: $clr-dark;  
+        &:hover{
+            background-color: darken($clr-blue, 10);
+        } 
+    }
+
     &-dark{
         background-color: $clr-dark;
         color: $clr-light;
-        border-color: $clr-dark;
         &:hover{
             background-color: darken($clr-dark, 10);
         }   
-
     }
 
     &-outline{

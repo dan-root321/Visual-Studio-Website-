@@ -1,8 +1,10 @@
 .header{
     position: relative;
+    position: fixed;
     width: 100%;
     height: fit-content;
     background: $clr-dark;
+    z-index: 99999999;
     
 
     &__wrapper{
